@@ -1,0 +1,9 @@
+#@ load("@ytt:data", "data")
+---
+name: "helm-values"
+csiConfig:
+  - clusterID: #@ data.values.ceph_csi_rbd.cluster_id
+    monitors:
+    #@ for address in data.values.ceph_csi_rbd.mons:
+      -  #@ address 
+    #@ end
