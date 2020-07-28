@@ -19,7 +19,7 @@ parameters:
    # The erasure coded pool must be set as the `dataPool` parameter below.
    dataPool: ec-data-pool
    #@ end
-   pool: xfs-pool
+   pool: #@ sc.pool
    imageFeatures: layering
    csi.storage.k8s.io/provisioner-secret-name: csi-rbd-secret
    csi.storage.k8s.io/provisioner-secret-namespace: #@ data.values.ceph_csi_rbd.namespace
