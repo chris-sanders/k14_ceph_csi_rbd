@@ -17,7 +17,7 @@ parameters:
    # used for the metadata of the images.
    #@ if hasattr(sc, "data_pool"):
    # The erasure coded pool must be set as the `dataPool` parameter below.
-   dataPool: ec-data-pool
+   dataPool: #@ sc.data_pool
    #@ end
    pool: #@ sc.pool
    imageFeatures: layering
