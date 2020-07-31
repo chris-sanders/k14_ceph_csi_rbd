@@ -7,3 +7,6 @@ csiConfig:
     #@ for address in data.values.ceph_csi_rbd.mons:
       -  #@ address 
     #@ end
+provisioner:
+  name: provisioner
+  replicaCount: 2
