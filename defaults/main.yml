@@ -1,6 +1,7 @@
 ---
 # defaults file for ceph-csi-rbd
-k14_app: ceph-csi-rbd
-k14_helm_repo: https://github.com/ceph/ceph-csi.git
-k14_helm_ref: v2.1.2
-k14_helm_path: charts/ceph-csi-rbd
+k14:
+  app: ceph-csi-rbd
+  helm_repo: https://github.com/ceph/ceph-csi.git
+  helm_ref: v2.1.2
+  helm_path: charts/ceph-csi-rbd
